@@ -18,6 +18,7 @@ export class AppComponent {
   isLoading: boolean;
   date = new Date().getFullYear();
   isMenuOpen = false;
+
   constructor(
     private fb: FormBuilder,
     private toastService: ToastService,
@@ -26,6 +27,10 @@ export class AppComponent {
       name: ['', [Validators.required, Validators.minLength(2)]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+    });
+
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
     });
   }
 
@@ -81,25 +86,25 @@ export class AppComponent {
       text: 'Here I had the pleasure of collaborating with him at Upperlink limited where we work on building web application projects. He consistently demonstrated strong technical skills.',
     },
   ];
-
-  onScroll(element: HTMLElement) {
-    element.scrollIntoView();
-    this.isMenuOpen = false;
-    setTimeout(() => {
-      AOS.refresh();
-    }, 0);
-  }
-
   ngAfterViewInit(): void {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     });
-
-    setTimeout(() => {
-      AOS.refresh();
-    }, 0);
   }
+
+  ngAfterViewChecked(): void {
+    AOS.refreshHard();
+  }
+  onScroll(element: HTMLElement) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    this.isMenuOpen = false;
+
+    requestAnimationFrame(() => {
+      AOS.refreshHard();
+    });
+  }
+
   onSidebar() {
     this.isMenuOpen = !this.isMenuOpen;
   }
