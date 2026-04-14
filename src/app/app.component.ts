@@ -31,19 +31,19 @@ export class AppComponent {
 
   projects = [
     {
-      title: 'Inventory System',
+      title: 'Infrest Website',
       Img: './assets/image/infrest website.PNG',
       desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['PHP', 'Laravel', 'Vue.js'],
-      url: '',
+      skiils: ['Angular', 'Spring boot', 'Scss', 'Typescript'],
+      url: 'https://web.infrestng.com/',
     },
-
     {
-      title: 'Inventory System',
-      Img: './assets/image/infrest app.PNG',
+      title: 'Infrest Application Dashboard',
+      Img: './assets/image/dashboard.PNG',
       desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['PHP', 'Laravel', 'Vue.js'],
-      url: '',
+      skiils: ['Angular', 'Tailwind Css', 'Typescript'],
+
+      url: 'https://app.infrestng.com',
     },
 
     {
@@ -55,32 +55,17 @@ export class AppComponent {
     },
 
     {
-      title: 'Rapid Pay – Banking at Your Speed',
+      title: 'Rapid Pay Website',
       Img: './assets/image/rapid pay.PNG',
       desc: 'An engaging landing page built to promote a fast and secure mobile banking experience with intuitive design and clear user flow.',
       skiils: ['React', 'Tailwind css', 'Typescript'],
       url: 'https://rapidpayweb.vercel.app/',
     },
-
-    {
-      title: 'Inventory System',
-      Img: './assets/image/11.png',
-      desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['PHP', 'Laravel', 'Vue.js'],
-      url: '',
-    },
-    {
-      title: 'Inventory System',
-      Img: './assets/image/11.png',
-      desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['PHP', 'Laravel', 'Vue.js'],
-      url: '',
-    },
   ];
 
   testimonials = [
     {
-      name: 'Stephen Smith',
+      name: 'Joesph Ogiolu',
       title: 'CTO at Jalade Technology Limited',
       text: 'Working with Ebuka was an amazing experience. His attention to detail, problem-solving skills, and dedication to delivering quality solutions exceeded our expect',
     },
