@@ -87,12 +87,16 @@ export class AppComponent {
     },
   ];
   ngAfterViewInit(): void {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }
+    setTimeout(() => {
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+      });
 
+      AOS.refreshHard();
+    }, 300);
+  }
   ngAfterViewChecked(): void {
     AOS.refreshHard();
   }
