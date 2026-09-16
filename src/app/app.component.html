@@ -40,7 +40,12 @@
       </nav>
 
       <!-- Mobile Button -->
-      <button class="md:hidden text-body" (click)="onSidebar()">
+
+      <button
+        *ngIf="!isMenuOpen"
+        class="md:hidden text-body"
+        (click)="onSidebar()"
+      >
         <svg
           fill="none"
           stroke="currentColor"
@@ -53,6 +58,28 @@
             stroke-linejoin="miter"
             d="M4 6h16M4 12h16M4 18h16"
           ></path>
+        </svg>
+      </button>
+
+      <button
+        *ngIf="isMenuOpen"
+        class="md:hidden text-body"
+        (click)="onSidebar()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
         </svg>
       </button>
     </div>
@@ -72,7 +99,7 @@
           <a
             class="py-4 px-6 border-b border-border"
             (click)="onScroll(project)"
-            >My Projects</a
+            >Projects</a
           >
           <a
             class="py-4 px-6 border-b border-border"
@@ -294,8 +321,8 @@
             </button>
 
             <a
-              href="../assets/Software Development.pdf"
-              download=""
+              href="../assets/image/Chukwuebuka_Nwuba Resume.pdf"
+              download
               class="border md:text-lg font-medium justify-center flex outline-none items-center gap-2 border-primary relative overflow-hidden text-white px-4 py-2 rounded-md hover:text-white md:before:absolute md:before:inset-0 before:bg-primary md:before:translate-y-full md:before:transition-transform md:before:duration-500 md:hover:before:translate-y-0 md:before:-z-10 z-10"
             >
               <svg
@@ -548,7 +575,7 @@
           <div class="mt-12 p-6 border border-border bg-surface rounded-md">
             <h3 class="text-lg font-bold text-heading mb-2">Why Hire Me?</h3>
             <p class="text-[15px] text-body">
-              I stand out for my attention to detail, strong problem-solving
+              I stand out for my attention to details, strong problem-solving
               skills, and passion for building user-focused web solutions that
               are both visually appealing and highly functional.
             </p>
@@ -571,7 +598,7 @@
       <h2
         class="text-3xl text-white md:text-5xl font-bold border-l-4 pl-4 border-primary"
       >
-        My Projects
+        Projects
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 mt-12 lg:grid-cols-3 gap-7">

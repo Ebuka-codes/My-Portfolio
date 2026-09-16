@@ -36,19 +36,19 @@ export class AppComponent {
 
   projects = [
     {
-      title: 'Infrest Website',
-      Img: './assets/image/infrest website.PNG',
-      desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['Angular', 'Spring boot', 'Scss', 'Typescript'],
-      url: 'https://web.infrestng.com/',
-    },
-    {
-      title: 'Infrest Application Dashboard',
+      title: 'Infrest Financial System ',
       Img: './assets/image/dashboard.PNG',
-      desc: 'A robust inventory tracking application allowing real-time stock monitoring and reporting.',
-      skiils: ['Angular', 'Tailwind Css', 'Typescript'],
-
+      desc: 'A comprehensive financial management platform that empowers users to efficiently manage their finances, track expenses, and make informed financial decisions.',
+      skiils: ['Angular', 'Spring Boot', 'Scss', , 'Bold bi', 'Typescript'],
       url: 'https://app.infrestng.com',
+    },
+
+    {
+      title: 'Northstart Note blog Website',
+      Img: './assets/image/blog app 1.PNG',
+      desc: 'A modern blogging platform that allows users to create, share, and engage with content in a seamless and user-friendly environment.',
+      skiils: ['Next js', 'Tailwind css', 'Supabase', 'Typescript'],
+      url: 'https://northstar-note.vercel.app/',
     },
 
     {
@@ -57,6 +57,21 @@ export class AppComponent {
       desc: 'A modern recipe platform where users can discover, save, and manage their favorite meals with ease.',
       skiils: ['React', 'Tailwind css', 'Firebase', 'Typescript'],
       url: 'https://yumbinder.vercel.app/home',
+    },
+
+    {
+      title: 'Bankist Application',
+      Img: './assets/image/bakist 1.PNG',
+      desc: 'A modern recipe platform where users can discover, save, and manage their favorite meals with ease.',
+      skiils: [
+        'Nextjs',
+        'React',
+        'Tailwind css',
+        'Shacdn',
+        'Supabase',
+        'Typescript',
+      ],
+      url: 'https://bankist-app-gamma-sepia.vercel.app/',
     },
 
     {
@@ -70,7 +85,7 @@ export class AppComponent {
 
   testimonials = [
     {
-      name: 'Joesph Ogiolu',
+      name: 'Joseph Ogiolu',
       title: 'CTO at Jalade Technology Limited',
       text: 'Working with Ebuka was an amazing experience. His attention to detail, problem-solving skills, and dedication to delivering quality solutions exceeded our expect',
     },
