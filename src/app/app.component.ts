@@ -39,7 +39,7 @@ export class AppComponent {
       title: 'Infrest Financial System ',
       Img: './assets/image/dashboard.PNG',
       desc: 'A comprehensive financial management platform that empowers users to efficiently manage their finances, track expenses, and make informed financial decisions.',
-      skiils: ['Angular', 'Spring Boot', 'Scss', , 'Bold bi', 'Typescript'],
+      skiils: ['Angular', 'Spring Boot', 'Scss', 'Bold bi', 'Typescript'],
       url: 'https://app.infrestng.com',
     },
 
