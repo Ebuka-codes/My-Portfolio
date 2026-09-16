@@ -61,8 +61,8 @@ export class AppComponent {
 
     {
       title: 'Bankist Application',
-      Img: './assets/image/bakist 1.PNG',
-      desc: 'A modern recipe platform where users can discover, save, and manage their favorite meals with ease.',
+      Img: './assets/image/bankist app.PNG',
+      desc: 'A modern banking app with secure authentication, account management, deposits, transfers, and real-time transaction tracking.',
       skiils: [
         'Nextjs',
         'React',
