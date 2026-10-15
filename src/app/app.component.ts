@@ -37,7 +37,7 @@ export class AppComponent {
   projects = [
     {
       title: 'Infrest Financial System ',
-      Img: './assets/image/dashboard.PNG',
+      Img: './assets/image/infrest-login.PNG',
       desc: 'A comprehensive financial management platform that empowers users to efficiently manage their finances, track expenses, and make informed financial decisions.',
       skiils: ['Angular', 'Spring Boot', 'Scss', 'Bold bi', 'Typescript'],
       url: 'https://app.infrestng.com',
@@ -60,18 +60,11 @@ export class AppComponent {
     },
 
     {
-      title: 'Bankist Application',
-      Img: './assets/image/bankist app.PNG',
+      title: 'Finora Application',
+      Img: './assets/image/finora.PNG',
       desc: 'A modern banking app with secure authentication, account management, deposits, transfers, and real-time transaction tracking.',
-      skiils: [
-        'Nextjs',
-        'React',
-        'Tailwind css',
-        'Shacdn',
-        'Supabase',
-        'Typescript',
-      ],
-      url: 'https://bankist-app-gamma-sepia.vercel.app/',
+      skiils: ['Nextjs', 'React', 'Tailwind css', 'Supabase', 'Typescript'],
+      url: 'https://finora-app-one.vercel.app/login',
     },
 
     {
@@ -87,7 +80,7 @@ export class AppComponent {
     {
       name: 'Joseph Ogiolu',
       title: 'CTO at Jalade Technology Limited',
-      text: 'Working with Ebuka was an amazing experience. His attention to detail, problem-solving skills, and dedication to delivering quality solutions exceeded our expect',
+      text: 'Working with him was an amazing experience. His attention to detail, problem-solving skills, and dedication to delivering quality solutions exceeded our expect',
     },
     {
       name: 'Iyanuoluwa Hassan',
